@@ -10,4 +10,4 @@ See help first:
 
 Then you will see the shadowsocks's usage. Because the docker image will mount local's ``/etc`` directory, then you may run it again like:
 
-    docker run -d --name="shadowsocks" -v /etc -p 8388:8388 youngking/shadowsocks -c /etc/shadowsocks.json
+    docker run -d --name="shadowsocks" -v /etc:/etc -p 8388:8388 youngking/shadowsocks -c /etc/shadowsocks.json
